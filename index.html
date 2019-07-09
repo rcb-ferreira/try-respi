@@ -39,9 +39,9 @@
 
 
 				<section>
-					<h1>Try Raspberry Pi</h1>
+					<h1>Try Router First</h1>
 					<p>
-						<small>Created by <a href="http://twitter.com/imcaspar">@imcaspar</a></small>
+						<small>Created by <a href="mailto:ferreira.rcb@gmail.com" mailto>Rui Ferreira</a></small>
 					</p>
 				</section>
 
@@ -49,8 +49,8 @@
                                 <section>
                                 <h2>Contents</h2>
                                 <ul>
-                                       <li class="fragment">Where did I come from?</li>
-                                       <li class="fragment">Who am I?</li>
+                                       <li class="fragment">What is the problem?</li>
+                                       <li class="fragment">How can I fix it?</li>
                                        <li class="fragment">Where am I going?</li>
                                 </ul>
                                 </section>
@@ -59,24 +59,31 @@
                                 <section>
                                        <section data-markdown>
                                        <script type="text/template">
-                                          # Where did I come from?
+                                          # What is the problem?
                                        </script>
                                        </section>
 
                                        <section data-markdown>
-                                       <script type="text/template">
-                                          ![logo](images/Raspberry-Pi-logo.jpg)
-                                       </script>
+                                          <script type="text/template">
+                                             ### The Kitchen Sink
+                                             ![logo](images/kitchen-sink.jpg)
+                                          </script>
                                        </section>
 
                                        <section data-markdown>
                                        <script type="text/template">
                                        <blockquote> 
-                                          The Raspberry Pi is a credit-card-sized single-board computer developed
-                                          in the UK by the Raspberry Pi Foundation with the intention of promoting 
-                                          the teaching of basic computer science in schools.
+                                          Developers have every intension of following best practices, like 80/20 rules, etc. But for some reason at the end of the project "POC" the code always looks like a kitchen sink.
                                        </blockquote>
+                                          * sad devloper
                                        </script>
+                                       </section>
+
+                                       <section data-markdown>
+                                          <script type="text/template">
+                                             ### Complicated state management 
+                                             ![logo](images/project.png)
+                                          </script>
                                        </section>
                                 </section>
 
@@ -84,76 +91,42 @@
                                 <section>
                                        <section data-markdown>
                                        <script type="text/template">
-                                          # Who am I?
+                                          # How can I fix it?
                                        </script>
                                        </section>
 
                                        <section data-markdown>
                                        <script type="text/template">
-                                          ![mockup](images/RaspiModelB.png)
+                                          ### Router first
+                                          ![mockup](images/sitemap-example.png)
                                        </script>
                                        </section>
 
                                        <section data-markdown>
                                        <script type="text/template">
-                                          * **Power:** 2.5 W (model A), 3.5 W (model B)
-                                          * **CPU:** ARM1176JZF-S (armv6k) 700 MHz, up to 1 GHz.
-                                          * **Storage capacity:**  SD card slot (SD / SDHC)
-                                          * **Memory:** 256 MB (Model A / Model B v1)
-                                             512 MB (Model B v2)
-                                          * **Graphics:** Broadcom VideoCore IV
-                                          * **Website:** [www.raspberrypi.org](http://www.raspberrypi.org)
+                                          ### Home 
+                                          * **Logic:** getPath(), getPathData() 
+                                          * **State:** isAuth, !isAuth 
+                                          * **Content:** Title, Body, SEO (description, tags, links)
                                        </script>
                                        </section>
 
                                        <section data-markdown>
                                        <script type="text/template">
-                                          ![mockup](images/QuickStartGuide.png)
+                                          ### Parent
+                                          * Consumes route data (API end points)
+                                          * Router should dictate how content is rendered
                                        </script>
                                        </section>
 
                                        <section data-markdown>
                                        <script type="text/template">
-                                          ## How to get one?
+                                          ### Child
+                                          * Consumes route data (API end points)
+                                          * Router should dictate how content is rendered
+                                          * Lazy load when needed
                                        </script>
                                        </section>
-
-                                       <section data-markdown>
-                                       <script type="text/template">
-                                          ## Try [element14](http://cn.element14.com)
-                                       </script>
-                                       </section>
-
-                                       <section data-markdown>
-                                       <script type="text/template">
-                                          ## heat issue
-                                          ![mockup](images/thermal_raspberrypi_video_playback_network.png)
-                                       </script>
-                                       </section>
-
-
-                                       <section data-markdown>
-                                       <script type="text/template">
-                                          ## Some Useful Tips
-                                          * compatible SD cards: <http://elinux.org/RPi_SD_cards>
-                                          * **DO NOT** use HDMI2VGA adapter
-                                          * normal mobile phone charger will be fine (output >=0.7A)
-                                          * U need a Case, maybe a [Lego case](http://qing.weibo.com/1407521604/53e51344330023r5.html)
-                                       </script>
-                                       </section>
-
-                                       <section data-markdown>
-                                       <script type="text/template">
-                                          ## [OS Choices](http://www.raspberrypi.org/downloads)
-                                          * Raspbian “wheezy”
-                                          * Raspbmc
-                                          * Arch Linux ARM
-                                          * Plan9
-
-                                       </script>
-                                       </section>
-
-
                                 </section>
 
                                 <section>
