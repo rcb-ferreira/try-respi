@@ -114,17 +114,16 @@
                                        <section data-markdown>
                                        <script type="text/template">
                                           ### Parent
-                                          * Consumes route data (API end points)
-                                          * Router should dictate how content is rendered
+                                          * Consumes route data (Config data, API end points)
+                                          * Router should dictate how content gets rendered
                                        </script>
                                        </section>
 
                                        <section data-markdown>
                                        <script type="text/template">
                                           ### Child
-                                          * Consumes route data (API end points)
-                                          * Router should dictate how content is rendered
-                                          * Lazy load when needed
+                                          * Parent parses route data down to child
+                                          * Lazy load as needed to safe on bandwith
                                        </script>
                                        </section>
                                 </section>
@@ -138,12 +137,29 @@
 
                                        <section data-markdown>
                                        <script type="text/template">
-                                          ## Interesting Projects
-                                          * [Turn a Raspberry Pi Into an AirPlay Receiver](http://lifehacker.com/5978594/turn-a-raspberry-pi-into-an-airplay-receiver-for-streaming-music-in-your-living-room)
-                                          * [How to setup wireless connectivity on Raspberry Pi](http://blog.afkham.org/2013/01/how-to-setup-wireless-connectivity-on.html)
-                                          * [How to Turn a Raspberry Pi into a Low-Power NAS](http://www.howtogeek.com/139433/how-to-turn-a-raspberry-pi-into-a-low-power-network-storage-device/)
-                                          * [Turning the Raspberry Pi Into an FM Transmitter](http://www.icrobotics.co.uk/wiki/index.php/Turning_the_Raspberry_Pi_Into_an_FM_Transmitter)
-                                          * [用 Raspberry Pi 打造真正的豆瓣FM](http://www.freemindworld.com/blog/2013/130218_douban_fm_with_raspberry_pi.shtml)
+                                          ## Interesting Concepts
+                                          * Router should dictate how each section in the view is rendered.
+                                          * State mangement can be handled through routes
+                                          * Router can be disabled without affecting the rest of project (blue, green deployment)
+                                          * Router dictates primary, secondary links (not hardcoded!!!)
+                                          * Router should cator for a single page application to a project with 100s pages.
+                                       </script>
+                                       </section>
+
+                                       <section data-markdown>
+                                       <script type="text/template">
+                                          ## Pros
+                                          * Free up devepers to focus on the functionality instead of state management.
+                                          * Make it easier to debug issues. (only one point of failure)
+                                          * Adding new features is a breeze.
+                                       </script>
+                                       </section>
+
+                                       <section data-markdown>
+                                       <script type="text/template">
+                                          ## Cons
+                                          * New concept for developers, hard to think moduler.
+                                          * Have to always make sure you add new functionality to the routes when implementing new features
                                        </script>
                                        </section>
 
@@ -152,9 +168,7 @@
 
                                <section data-markdown>
                                <script type="text/template">
-# Q & A
-### [@imcaspar](http://twitter.com/imcaspar)
-![url](images/url.png)
+                                    # Q & A
                                </script>
 			       </section>
 
