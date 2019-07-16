@@ -1,7 +1,7 @@
-Try Raspberry Pi
+Try Router First
 =========
-Just another short introduction to the Raspberry Pi.
+Just a thinker, how can we only use the router to manage a web app.
 
-<http://imcaspar.github.io/try-respi>
+<https://osiristradingza.github.io/try-router-first/>
 
 ![ScreenShot](screenshot.png)

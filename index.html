@@ -1,210 +1,211 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+   <meta charset="utf-8">
 
-		<title>Try Paspberry Pi</title>
+   <title>Try Router First</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+   <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+   <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+   <link rel="stylesheet" href="css/reveal.min.css">
+   <link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+   <!-- For syntax highlighting -->
+   <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+   <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+   <script>
+      document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+   </script>
 
-		<!--[if lt IE 9]>
+   <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+   <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-
-
-				<section>
-					<h1>Try Router First</h1>
-					<p>
-						<small>Created by <a href="mailto:ferreira.rcb@gmail.com" mailto>Rui Ferreira</a></small>
-					</p>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
 
 
-                                <section>
-                                <h2>Contents</h2>
-                                <ul>
-                                       <li class="fragment">What is the problem?</li>
-                                       <li class="fragment">How can I fix it?</li>
-                                       <li class="fragment">Where am I going?</li>
-                                </ul>
-                                </section>
+         <section>
+            <h1>Try Router First</h1>
+            <p>
+               <small>Created by <a href="mailto:ferreira.rcb@gmail.com" mailto>Rui Ferreira</a></small>
+            </p>
+         </section>
 
 
-                                <section>
-                                       <section data-markdown>
-                                       <script type="text/template">
+         <section>
+            <h2>Contents</h2>
+            <ul>
+               <li class="fragment">What is the problem?</li>
+               <li class="fragment">How can I fix it?</li>
+               <li class="fragment">Where am I going?</li>
+            </ul>
+         </section>
+
+
+         <section>
+            <section data-markdown>
+               <script type="text/template">
                                           # What is the problem?
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                          <script type="text/template">
+            <section data-markdown>
+               <script type="text/template">
                                              ### The Kitchen Sink
                                              ![logo](images/kitchen-sink.jpg)
                                           </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                       <script type="text/template">
-                                       <blockquote> 
+            <section data-markdown>
+               <script type="text/template">
+                                       <blockquote>
                                           Developers have every intension of following best practices, like 80/20 rules, etc. But for some reason at the end of the project "POC" the code always looks like a kitchen sink.
                                        </blockquote>
-                                          * sad devloper
+                                          * sad developer
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                          <script type="text/template">
-                                             ### Complicated state management 
+            <section data-markdown>
+               <script type="text/template">
+                                             ### Complicated state management
                                              ![logo](images/project.png)
                                           </script>
-                                       </section>
-                                </section>
+            </section>
+         </section>
 
 
-                                <section>
-                                       <section data-markdown>
-                                       <script type="text/template">
+         <section>
+            <section data-markdown>
+               <script type="text/template">
                                           # How can I fix it?
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                       <script type="text/template">
+            <section data-markdown>
+               <script type="text/template">
                                           ### Router first
                                           ![mockup](images/sitemap-example.png)
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                       <script type="text/template">
-                                          ### Home 
-                                          * **Logic:** getPath(), getPathData() 
-                                          * **State:** isAuth, !isAuth 
+            <section data-markdown>
+               <script type="text/template">
+                                          ### Home
+                                          * **Logic:** getPath(), getPathData()
+                                          * **State:** isAuth, !isAuth
                                           * **Content:** Title, Body, SEO (description, tags, links)
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                       <script type="text/template">
+            <section data-markdown>
+               <script type="text/template">
                                           ### Parent
                                           * Consumes route data (Config data, API end points)
                                           * Router should dictate how content gets rendered
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                       <script type="text/template">
+            <section data-markdown>
+               <script type="text/template">
                                           ### Child
                                           * Parent parses route data down to child
-                                          * Lazy load as needed to safe on bandwith
+                                          * Lazy load as needed to save on bandwith
                                        </script>
-                                       </section>
-                                </section>
+            </section>
+         </section>
 
-                                <section>
-                                       <section data-markdown>
-                                       <script type="text/template">
+         <section>
+            <section data-markdown>
+               <script type="text/template">
                                           # Where am I going?
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                       <script type="text/template">
+            <section data-markdown>
+               <script type="text/template">
                                           ## Interesting Concepts
                                           * Router should dictate how each section in the view is rendered.
                                           * State mangement can be handled through routes
                                           * Router can be disabled without affecting the rest of project (blue, green deployment)
                                           * Router dictates primary, secondary links (not hardcoded!!!)
-                                          * Router should cator for a single page application to a project with 100s pages.
+                                          * Router should be able to cater from a single page application to application with 100s of pages.
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                       <script type="text/template">
+            <section data-markdown>
+               <script type="text/template">
                                           ## Pros
                                           * Free up devepers to focus on the functionality instead of state management.
                                           * Make it easier to debug issues. (only one point of failure)
                                           * Adding new features is a breeze.
                                        </script>
-                                       </section>
+            </section>
 
-                                       <section data-markdown>
-                                       <script type="text/template">
+            <section data-markdown>
+               <script type="text/template">
                                           ## Cons
                                           * New concept for developers, hard to think moduler.
                                           * Have to always make sure you add new functionality to the routes when implementing new features
                                        </script>
-                                       </section>
+            </section>
 
-                               </section>
-                         
+         </section>
 
-                               <section data-markdown>
-                               <script type="text/template">
+
+         <section data-markdown>
+            <script type="text/template">
                                     # Q & A
                                </script>
-			       </section>
+         </section>
 
-			</div>
+      </div>
 
-		</div>
+   </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+   <script src="lib/js/head.min.js"></script>
+   <script src="js/reveal.min.js"></script>
 
-		<script>
+   <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+         controls: true,
+         progress: true,
+         history: true,
+         center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+         // Optional libraries used to extend on reveal.js
+         dependencies: [
+            { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+            { src: 'plugin/markdown/showdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+            { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+         ]
+      });
 
-		</script>
+   </script>
 
-	</body>
+</body>
+
 </html>
